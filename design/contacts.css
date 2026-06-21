@@ -1,0 +1,9 @@
+/* contacts.css */
+#contact_wrappper {}
+#contact_wrappper #contact_table {padding: 10px 10px;}
+#contact_wrappper #contact_table TD.left_col {font-weight: 600; text-align: right;}
+#contact_wrappper #contact_form {padding: 10px 0 0 0px;}
+#contact_wrappper #contact_form LABEL {display: block; float: left; font-weight: 600; text-align: right; padding-right: 5px; width: 140px;}
+#contact_wrappper #contact_form INPUT.submit {margin: 5px 0 0 145px;}
+
+

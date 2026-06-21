@@ -1,0 +1,4 @@
+﻿/*Фиксим разрывы между пунктами левого меню */ 
+#left_menu ul li ul li {display: inline}
+
+#gallery_general_wrapper .set_wrapper {display: inline}

@@ -1,0 +1,8 @@
+/* links.css */
+#links_wrapper {max-width: 600px;}
+#links_wrapper H1 {font-family: Georgia, serif; font-size: 24px; font-weight: normal; letter-spacing: 1px; margin: 0 0 2px;}
+#links_wrapper .links_note {color: #6B6B5E; font-style: italic; margin: 0 0 18px;}
+#content UL.links_list {list-style-type: none; margin: 0; padding: 0;}
+#content UL.links_list LI {border-left: 3px solid #EAE8D9; margin: 0 0 14px; padding: 2px 0 2px 12px;}
+#content UL.links_list A {font-size: 13px; font-weight: bold;}
+#content UL.links_list .link_desc {color: #4A4A3E; display: block;}

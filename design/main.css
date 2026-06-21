@@ -1,0 +1,273 @@
+/* main.css */
+BODY{
+	font: small Verdana,sans;
+	margin: 0 auto;
+	padding: 0;
+	width: 900px;
+}
+A IMG {border: 0}
+
+/* ------------------------------------------------------------------- */
+/* ------------------------ СТИЛИ - ВЁРСТКА -------------------------- */
+/* ------------------------------------------------------------------- */
+
+#container{
+	background: #F2EDE3 url(back.gif) repeat-y top left;
+	font-size: 12px;
+	min-height: 100vh;
+	overflow: hidden;
+}
+#left_col{
+	background: #ECDEB9;
+	float: left;	
+	width: 190px;
+}
+#right_col{
+	float: right;	
+	margin-bottom: 40px;
+	position: relative;
+	width: 703px;
+}
+/* ------------------------------------------ флаги ---------------------------------- */
+#right_col A.flag {
+	display: block;
+	height: 15px;
+	right: 25px;
+	text-decoration: none;
+	top: 5px;
+	position: absolute;
+	width: 30px;
+}
+#right_col A.flag_ru {background: url(flag_ru.gif);}
+#right_col A.flag_ru:hover {background: url(flag_ru2.gif);}
+#right_col A.flag_en {background: url(flag_en.gif);}
+#right_col A.flag_en:hover {background: url(flag_en2.gif);}
+/* --------------------------------------- верхнее меню -------------------------------- */
+#top_menu{
+	background: #E9DCB8 url(top.gif) no-repeat top center;
+	float: right;
+	height: 140px;
+	width: 703px;
+}
+#top_menu *{
+	padding: 0;
+	margin: 0;
+}
+#top_menu UL {
+	display: flex;
+	font-family: Georgia, serif;
+	font-size: 19px;
+	justify-content: space-evenly;
+	letter-spacing: 0.5px;
+	list-style: none;
+	margin: 94px 0 0 75px;
+	padding: 0;
+	text-transform: uppercase;
+}
+#top_menu LI {
+	margin: 0;
+	padding: 0;
+}
+#top_menu A {
+	color: #4A4A3E;
+	margin: 0;
+	padding-bottom: 1px;
+	text-decoration: none;
+}
+#top_menu A:hover {
+	background: url(pal.gif) repeat-x bottom left; 
+}
+/* --------------------------------------- левое меню -------------------------------- */
+#left_menu{
+	font-family: Georgia, serif;
+	font-weight: bold;
+	list-style: none;
+	margin: 40px 0 0 17px;
+	padding: 0;
+	text-transform: uppercase;
+}
+#left_menu UL{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#left_menu LI{
+	margin: 0;
+	padding: 0;
+}
+#left_menu A.upper_link{
+	background: #ECDEB9 url(left_un.gif) no-repeat top left;
+	color: #3A3A2E;
+	display: block;
+	font-size: 15px;
+	line-height: 1.15;
+	margin: 5px 0 0 5px;
+	text-align: center;
+	text-decoration: none;
+	padding: 6px 4px 4px 4px;
+	width: 124px;
+}
+#left_menu A.upper_link:hover{
+	border-right: 1px solid #4A4A3E;
+	border-bottom: 1px solid #4A4A3E;
+	padding-bottom: 3px;
+	padding-right: 3px;
+}
+#left_menu A.lower_link{
+	background-image: none;
+	border-right: 2px solid #4A4A3E;
+	color: #3A3A2E;
+	display: block;
+	font-size: 11px;
+	margin: 0 2px 0 20px;
+	text-align: center;
+	text-decoration: none;
+	padding: 3px 1px 0 20px;
+	width: auto;
+}
+#left_menu A.lower_link:hover{
+	border-right: 2px solid #B70A00;
+	color: #B70A00;
+}
+#left_menu UL LI UL {
+	display: none;
+}
+
+/* главная область - содержание */
+#content {
+	background: #F2EDE3;
+	float: right;
+	font-size: 12px !important;
+	line-height: 1.5;
+	width: 100%;
+}
+#content H1 {font-size: 18px; margin: 0 0 12px;}
+#content H2 {font-size: 15px; margin: 18px 0 8px;}
+#content H3 {font-size: 14px; margin: 0 0 10px;}
+#content H4 {font-size: 12px; margin: 12px 0 6px;}
+.std_margin {
+	margin: 50px 20px 0 30px;
+}
+/* подвал */
+#footer{
+	clear: both;
+	height: 100px;
+	padding-top: 10px;
+	position: relative;
+	width: auto;
+}
+#footer #wm_block{
+	bottom: 5px;
+	color: #AB8DA9;
+	font: 90% Verdana, sans-serif;
+	position: absolute;
+	right: 15px;
+}
+
+/* ------------------------------------------------------------------- */
+/* ------------------------ СТИЛИ - СТИЛИ ---------------------------- */
+/* ------------------------------------------------------------------- */
+/* стиль всплывающей подсказки*/
+#tooltip{
+	background:#FFFFFF;
+	border:1px solid #666666;
+	color:#333333;
+	font:menu;
+	margin:0px;
+	padding:3px 5px;
+	position:absolute;
+	visibility:hidden
+}
+
+/* ------------------------------------------------------------------- */
+/* ------------------------ СТИЛИ - КОНТЕНТ -------------------------- */
+/* ------------------------------------------------------------------- */
+A:link {color: #6A685B; text-decoration: none;}
+A:visited {color: #6A685B; text-decoration: none;}
+A:hover {color: black; text-decoration: underline;}
+A:active {color: #6A685B; text-decoration: none;}
+
+#home_page_img {border-top: 26px; border-right: 50px; border-bottom: 52px; border-left: 50px; border-style: solid; border-color: #EAE8D9;}
+
+#text_block {text-align: center}
+
+/* стили галерей (общее)*/
+#gallery_general_wrapper  {text-align: center; overflow: hidden;}
+#gallery_general_wrapper .set_wrapper {display: -moz-inline-box; display: inline-block; height: 200px; padding: 3px 3px; vertical-align: top; width: 190px;}
+#gallery_general_wrapper  IMG {display: block; margin: 0 auto; }
+#gallery_general_wrapper  A {display: block;  width: 190px}
+
+/*
+border: 1px solid black;
+float: right; 
+float: left;
+*/
+/* стили галереи мозаики (детали)*/
+#gallery_detail_one_wrapper .detail_img {display: block; margin: 0 auto; }
+#gallery_detail_one_wrapper .comment {text-align:center; }
+#gallery_detail_one_wrapper .gen_comment {padding: 30px 0 20px 0;}
+#gallery_detail_one_wrapper .pages {float: right; text-align: right; width: 357px;}
+#gallery_detail_one_wrapper .pages A, #gallery_detail_one_wrapper .pages SPAN    {float: left; font-weight: bold; letter-spacing: 1px; width: 35px;}
+#gallery_detail_one_wrapper .pages A:link    {color: black; text-decoration: none;}
+#gallery_detail_one_wrapper .pages A:visited  {color: #666; text-decoration: none;}
+#gallery_detail_one_wrapper .pages A:hover   {color: black; text-decoration: line-through;}
+#gallery_detail_one_wrapper .pages A:active  {color: black; text-decoration: line-through;}
+#gallery_detail_one_wrapper .pages A.selected {text-decoration: underline;}
+#gallery_detail_one_wrapper .go_back  {float: left; margin-left: 40px;}
+/*
+#gallery_detail_one_wrapper .pages {margin-left: auto; text-align: right; float: right; border: 1px solid black;}
+#gallery_detail_one_wrapper .pages TD {width: 35px;}
+#gallery_detail_one_wrapper .pages A    {font-weight: bold; letter-spacing: 1px;}
+*/
+/* стили галереи мозаики (большие детали)*/
+#gallery_detail_one_big_wrapper IMG  {display:block; margin: 0 auto;}
+#gallery_detail_one_big_wrapper .text_for_img  {text-align: center;}
+#gallery_detail_one_big_wrapper .go_back {padding: 15px 0;}
+/* стили галереи этюдов (детали) */ 
+#gallery_detail_all_wrapper {margin: 70px 0 0 20px;}
+#gallery_detail_all_wrapper .imgs_wrapper {display: grid; grid-template-columns: 300px 300px; column-gap: 50px; row-gap: 10px;}
+#gallery_detail_all_wrapper .imgs_wrapper BR.clear {display: none;}
+/* each picture + caption spans two shared rows: pictures sit on a common bottom line, captions start on one line */
+#gallery_detail_all_wrapper .img_wrapper {display: grid; grid-row: span 2; grid-template-rows: subgrid; width: 300px;}
+#gallery_detail_all_wrapper .img_wrapper > BR {display: none;}
+#gallery_detail_all_wrapper .img_wrapper > IMG {align-self: end;}
+#gallery_detail_all_wrapper .img_wrapper > .text_for_img {align-self: start; margin-top: 10px; margin-bottom: 30px;}
+#gallery_detail_all_wrapper .img_wrapper IMG {display: block; margin: 0 auto;}
+#gallery_detail_all_wrapper .text_for_img { margin: 0 auto; width: 200px;}
+#gallery_detail_all_wrapper .comment_ru {float: right;  width: 150px;}
+#gallery_detail_all_wrapper .additional {float: right; width: 150px;}
+#gallery_detail_all_wrapper .zoom {float: left;}
+#gallery_detail_all_wrapper .pages {float: right; text-align: right; width: 357px;}
+#gallery_detail_all_wrapper .pages A, #gallery_detail_all_wrapper .pages SPAN    {float: left; font-weight: bold; letter-spacing: 1px; width: 35px;}
+#gallery_detail_all_wrapper .pages A:link    {color: black; text-decoration: none;}
+#gallery_detail_all_wrapper .pages A:visited  {color: #666; text-decoration: none;}
+#gallery_detail_all_wrapper .pages A:hover   {color: black; text-decoration: line-through;}
+#gallery_detail_all_wrapper .pages A:active  {color: black; text-decoration: line-through;}
+#gallery_detail_all_wrapper .pages A.selected {text-decoration: underline;}
+#gallery_detail_all_wrapper .go_back  {margin-left: 40px;}
+#gallery_detail_all_wrapper .imgs_wrapper  {overflow: hidden;;}
+/* стили галереи этюдов (большие детали) */
+#gallery_big_detail_all_wrapper IMG {display: block; margin: 0 auto;}
+#gallery_big_detail_all_wrapper .text_for_img {margin: 0 auto; width: 550px;}
+#gallery_big_detail_all_wrapper .comment_ru {float: left; text-align: left; width: 230px;}
+#gallery_big_detail_all_wrapper .additional {float: left; text-align: center; width: 120px;}
+#gallery_big_detail_all_wrapper .go_back    {float: right; text-align: center; width: 200px;}
+
+#text_block {text-align: justify;}
+#text_block #artist_photo {float:left; margin-right: 10px;}
+/* ------------------------------------------------------------------- */
+/* ---------------- СТИЛИ - СТАТУСНЫЕ СООБЩЕНИЯ ---------------------- */
+/* ------------------------------------------------------------------- */
+#just_text {margin: 40px 40px 0 30px;}
+.error, .ok {background-color: #EAE8D9; margin: 5px 0 5px 10px; padding: 10px 20px 10px 32px;}
+.ok {background: #EAE8D9 url(ok.gif) left center no-repeat;}
+.error {background: #EAE8D9 url(error.gif) left center no-repeat;}
+
+
+/* страница художника */
+#content .artist_page {display: flex; align-items: flex-start; gap: 25px; max-width: 640px;}
+#content .artist_page .artist_photo {border: 10px solid #EAE8D9; flex: none; height: auto; width: 220px;}
+#content .artist_page .artist_text {flex: 1;}
+#content .artist_page H1 {font-family: Georgia, serif; font-size: 24px; font-weight: normal; letter-spacing: 1px; margin: 4px 0 2px;}
+#content .artist_page .artist_role {color: #6B6B5E; font-style: italic; margin: 0 0 16px;}
+#content .artist_page P {margin: 0 0 10px; text-align: left;}

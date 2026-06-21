@@ -1,0 +1,5 @@
+/* home_page.css */
+#text_block.std_margin {margin: 10px 0 0 0 ; text-align: center;}
+#text_block #front_img {border-width: 30px 70px; border-color: #EAE8D9; border-style: solid; display: block; margin: 0 auto}
+
+#text_block .intro {margin: 14px 40px 0;}

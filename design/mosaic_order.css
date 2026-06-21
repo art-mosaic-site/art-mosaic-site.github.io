@@ -1,0 +1,7 @@
+/* mosaic_order.css */
+#form_div {overflow: hidden; }
+#form_div LABEL {display: block; float: left; font-weight: bold; padding-right: 10px; text-align: right; width: 180px; }
+#content TEXTAREA {height: 100px; width: 270px;}
+#content .submit {margin: 10px 0 0 190px;}
+#content IMG {float: left;}
+
